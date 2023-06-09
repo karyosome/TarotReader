@@ -1,0 +1,282 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.hyphens",
+        "description": "TarotReading.static.images.RenameScript.hyphens",
+        "peekOfCode": "folder_path = \"/workspaces/codespaces-blank/TarotReading/static/images\"  # Specify the path to the folder containing the image files\n# Get a list of all files in the folder\nfile_list = os.listdir(folder_path)\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file\n    if os.path.isfile(current_file_path):\n        # Extract the new file name",
+        "detail": "TarotReading.static.images.RenameScript.hyphens",
+        "documentation": {}
+    },
+    {
+        "label": "file_list",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.hyphens",
+        "description": "TarotReading.static.images.RenameScript.hyphens",
+        "peekOfCode": "file_list = os.listdir(folder_path)\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file\n    if os.path.isfile(current_file_path):\n        # Extract the new file name\n        new_file_name = re.sub(r\"[-\\s]tarot\", \"\", filename, flags=re.IGNORECASE).lower()\n        # Create the new file path by joining the folder path and the new file name",
+        "detail": "TarotReading.static.images.RenameScript.hyphens",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.rename",
+        "description": "TarotReading.static.images.RenameScript.rename",
+        "peekOfCode": "folder_path = \"static/images\"  # Specify the relative path to the folder containing the images\n# Get the absolute path to the folder\nfolder_path = os.path.abspath(folder_path)\n# Get a list of all files in the folder\nfile_list = os.listdir(folder_path)\n# Define the renaming pattern regex\npattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename",
+        "detail": "TarotReading.static.images.RenameScript.rename",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.rename",
+        "description": "TarotReading.static.images.RenameScript.rename",
+        "peekOfCode": "folder_path = os.path.abspath(folder_path)\n# Get a list of all files in the folder\nfile_list = os.listdir(folder_path)\n# Define the renaming pattern regex\npattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file",
+        "detail": "TarotReading.static.images.RenameScript.rename",
+        "documentation": {}
+    },
+    {
+        "label": "file_list",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.rename",
+        "description": "TarotReading.static.images.RenameScript.rename",
+        "peekOfCode": "file_list = os.listdir(folder_path)\n# Define the renaming pattern regex\npattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file\n    if os.path.isfile(current_file_path):\n        # Extract the new file name",
+        "detail": "TarotReading.static.images.RenameScript.rename",
+        "documentation": {}
+    },
+    {
+        "label": "pattern",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.rename",
+        "description": "TarotReading.static.images.RenameScript.rename",
+        "peekOfCode": "pattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file\n    if os.path.isfile(current_file_path):\n        # Extract the new file name\n        match = re.search(pattern, filename)\n        if match:",
+        "detail": "TarotReading.static.images.RenameScript.rename",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.renamescript",
+        "description": "TarotReading.static.images.RenameScript.renamescript",
+        "peekOfCode": "folder_path = os.path.abspath(os.path.join(os.path.dirname(__file__), \"..\"))  # Get the absolute path to the parent directory\nfolder_path = os.path.join(folder_path, \"images\")  # Specify the relative path to the folder containing the images\n# Get a list of all files in the folder\nfile_list = os.listdir(folder_path)\n# Define the renaming pattern regex\npattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)",
+        "detail": "TarotReading.static.images.RenameScript.renamescript",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.renamescript",
+        "description": "TarotReading.static.images.RenameScript.renamescript",
+        "peekOfCode": "folder_path = os.path.join(folder_path, \"images\")  # Specify the relative path to the folder containing the images\n# Get a list of all files in the folder\nfile_list = os.listdir(folder_path)\n# Define the renaming pattern regex\npattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file",
+        "detail": "TarotReading.static.images.RenameScript.renamescript",
+        "documentation": {}
+    },
+    {
+        "label": "file_list",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.renamescript",
+        "description": "TarotReading.static.images.RenameScript.renamescript",
+        "peekOfCode": "file_list = os.listdir(folder_path)\n# Define the renaming pattern regex\npattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file\n    if os.path.isfile(current_file_path):\n        # Extract the new file name",
+        "detail": "TarotReading.static.images.RenameScript.renamescript",
+        "documentation": {}
+    },
+    {
+        "label": "pattern",
+        "kind": 5,
+        "importPath": "TarotReading.static.images.RenameScript.renamescript",
+        "description": "TarotReading.static.images.RenameScript.renamescript",
+        "peekOfCode": "pattern = r\"\\d{2}-(.*?)-img-\\d+x\\d+-\\d+\\.(jpg|jpeg)\"\n# Iterate over each file in the folder\nfor filename in file_list:\n    # Create the current file path by joining the folder path and the filename\n    current_file_path = os.path.join(folder_path, filename)\n    # Check if the current item is a file\n    if os.path.isfile(current_file_path):\n        # Extract the new file name\n        match = re.search(pattern, filename)\n        if match:",
+        "detail": "TarotReading.static.images.RenameScript.renamescript",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "TarotReading.TarotReading",
+        "description": "TarotReading.TarotReading",
+        "peekOfCode": "def home():\n    return render_template('index.html')\n@app.route('/start-reading', methods=['POST'])\ndef start_reading():\n    # Get the question or intention from the request\n    question = request.json['question']\n    # Shuffle the deck and draw seven cards for the reading\n    random.shuffle(tarot_cards)\n    drawn_cards = tarot_cards[:7]\n    # Use the OpenAI API to generate interpretations for each card",
+        "detail": "TarotReading.TarotReading",
+        "documentation": {}
+    },
+    {
+        "label": "start_reading",
+        "kind": 2,
+        "importPath": "TarotReading.TarotReading",
+        "description": "TarotReading.TarotReading",
+        "peekOfCode": "def start_reading():\n    # Get the question or intention from the request\n    question = request.json['question']\n    # Shuffle the deck and draw seven cards for the reading\n    random.shuffle(tarot_cards)\n    drawn_cards = tarot_cards[:7]\n    # Use the OpenAI API to generate interpretations for each card\n    interpretations = []\n    for i, card in enumerate(drawn_cards):\n        time_period = [",
+        "detail": "TarotReading.TarotReading",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_key",
+        "kind": 5,
+        "importPath": "TarotReading.TarotReading",
+        "description": "TarotReading.TarotReading",
+        "peekOfCode": "openai.api_key = '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'\napp = Flask(__name__)\ntarot_cards = [\n    # Major Arcana\n    'The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',\n    'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit',\n    'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance',\n    'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun',\n    'Judgement', 'The World',\n    # Minor Arcana",
+        "detail": "TarotReading.TarotReading",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "TarotReading.TarotReading",
+        "description": "TarotReading.TarotReading",
+        "peekOfCode": "app = Flask(__name__)\ntarot_cards = [\n    # Major Arcana\n    'The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',\n    'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit',\n    'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance',\n    'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun',\n    'Judgement', 'The World',\n    # Minor Arcana\n    'Ace of Cups', 'Two of Cups', 'Three of Cups', 'Four of Cups', 'Five of Cups',",
+        "detail": "TarotReading.TarotReading",
+        "documentation": {}
+    },
+    {
+        "label": "tarot_cards",
+        "kind": 5,
+        "importPath": "TarotReading.TarotReading",
+        "description": "TarotReading.TarotReading",
+        "peekOfCode": "tarot_cards = [\n    # Major Arcana\n    'The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',\n    'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit',\n    'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance',\n    'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun',\n    'Judgement', 'The World',\n    # Minor Arcana\n    'Ace of Cups', 'Two of Cups', 'Three of Cups', 'Four of Cups', 'Five of Cups',\n    'Six of Cups', 'Seven of Cups', 'Eight of Cups', 'Nine of Cups', 'Ten of Cups',",
+        "detail": "TarotReading.TarotReading",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "TarotReading.TarotReading_v1",
+        "description": "TarotReading.TarotReading_v1",
+        "peekOfCode": "def home():\n    return render_template('index.html')\n@app.route('/start-reading', methods=['POST'])\ndef start_reading():\n    # Get the question or intention from the request\n    question = request.json['question']\n    # Shuffle the deck and draw seven cards for the reading\n    random.shuffle(tarot_cards)\n    drawn_cards = tarot_cards[:7]\n    # Use the OpenAI API to generate interpretations for each card",
+        "detail": "TarotReading.TarotReading_v1",
+        "documentation": {}
+    },
+    {
+        "label": "start_reading",
+        "kind": 2,
+        "importPath": "TarotReading.TarotReading_v1",
+        "description": "TarotReading.TarotReading_v1",
+        "peekOfCode": "def start_reading():\n    # Get the question or intention from the request\n    question = request.json['question']\n    # Shuffle the deck and draw seven cards for the reading\n    random.shuffle(tarot_cards)\n    drawn_cards = tarot_cards[:7]\n    # Use the OpenAI API to generate interpretations for each card\n    interpretations = []\n    for i, card in enumerate(drawn_cards):\n        time_period = [",
+        "detail": "TarotReading.TarotReading_v1",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_key",
+        "kind": 5,
+        "importPath": "TarotReading.TarotReading_v1",
+        "description": "TarotReading.TarotReading_v1",
+        "peekOfCode": "openai.api_key = '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'\napp = Flask(__name__)\ntarot_cards = [\n    # Major Arcana\n    'The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',\n    'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit',\n    'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance',\n    'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun',\n    'Judgement', 'The World',\n    # Minor Arcana",
+        "detail": "TarotReading.TarotReading_v1",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "TarotReading.TarotReading_v1",
+        "description": "TarotReading.TarotReading_v1",
+        "peekOfCode": "app = Flask(__name__)\ntarot_cards = [\n    # Major Arcana\n    'The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',\n    'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit',\n    'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance',\n    'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun',\n    'Judgement', 'The World',\n    # Minor Arcana\n    'Ace of Cups', 'Two of Cups', 'Three of Cups', 'Four of Cups', 'Five of Cups',",
+        "detail": "TarotReading.TarotReading_v1",
+        "documentation": {}
+    },
+    {
+        "label": "tarot_cards",
+        "kind": 5,
+        "importPath": "TarotReading.TarotReading_v1",
+        "description": "TarotReading.TarotReading_v1",
+        "peekOfCode": "tarot_cards = [\n    # Major Arcana\n    'The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor',\n    'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit',\n    'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance',\n    'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun',\n    'Judgement', 'The World',\n    # Minor Arcana\n    'Ace of Cups', 'Two of Cups', 'Three of Cups', 'Four of Cups', 'Five of Cups',\n    'Six of Cups', 'Seven of Cups', 'Eight of Cups', 'Nine of Cups', 'Ten of Cups',",
+        "detail": "TarotReading.TarotReading_v1",
+        "documentation": {}
+    }
+]

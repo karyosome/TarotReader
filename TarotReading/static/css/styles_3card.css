@@ -1,0 +1,145 @@
+html {
+    background-image: url("/static/images/backgrounds/carnival.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    height: 40px;
+    width: 400px;
+    font-size: 18px;
+    color: rgb(201, 219, 0);
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  input[type="text"]::placeholder {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #500050;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Set a preferred width */
+  }
+  
+  button:hover {
+    background-color: #2f0d6b;
+    transform: translateY(2px);
+  }
+  
+  button:active {
+    background-color: #2c3361;
+    transform: translateY(4px);
+  }
+  
+  #reading-results {
+    flex-grow: 1; /* Make the content area grow to push the footer down */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-weight: bold; /* Set text to bold */
+    overflow: auto; /* Add scrollbars if necessary */
+    color: white; /* Set text color to white */
+  }
+  
+  .card {
+    font-size: 32px;
+    font-weight: bold;
+    color: white; /* Set text color to white */
+  }
+  
+  .interpretation {
+    font-size: 24px; 
+    font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    word-wrap: break-word; /* Wrap long text within bounds */
+    max-width: 100%; /* Limit the width to fit within the container */
+  }
+  
+  .card-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 400px);
+  }
+  
+  .card-images img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px solid #ffffff; /* Add a solid white border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a box shadow for a fancy effect */
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 6px; /* Increase the border width */
+    border-style: solid; /* Add a solid border style */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+  .past-card {
+    background-color: black;
+    border: 4px solid white; /* Set thicker white border for the past card */
+  }
+  
+  .present-card {
+    background-color: red;
+    border: 4px solid white; /* Set thicker white border for the present card */
+  }
+  
+  .future-card {
+    background-color: white;
+    border: 4px solid white; /* Set thicker white border for the future card */
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+  }
+  {
+    font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+  }
+  

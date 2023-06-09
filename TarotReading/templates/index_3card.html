@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles_3card.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div id="card-images-container" class="card-images"></div> <!-- Move the card images container here -->
+        <div class="form-container">
+            <input id="question" type="text" placeholder="Enter your question or intention" style="height: 50px;">
+            <button id="start-reading">Start Tarot Reading</button>
+        </div>
+    </div>
+
+    <div id="reading-results"></div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Tarot Reading. All rights reserved. | Powered by <a href="https://joseacierto.com" target="_blank">joseacierto.com</a></p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        // Set the current year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
